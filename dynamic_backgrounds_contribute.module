@@ -1,0 +1,4 @@
+<?php
+
+include_once('dynamic_backgrounds_contribute.features.inc');
+
