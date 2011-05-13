@@ -57,7 +57,7 @@ function dynamic_backgrounds_contribute_views_default_views() {
       'relationship' => 'none',
     ),
     'name' => array(
-      'label' => 'Name',
+      'label' => 'User',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -87,6 +87,9 @@ function dynamic_backgrounds_contribute_views_default_views() {
       'table' => 'users',
       'field' => 'name',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('sorts', array(
@@ -626,7 +629,7 @@ function dynamic_backgrounds_contribute_views_default_views() {
     ),
     'default' => '-1',
     'execution_type' => '1',
-    'display_type' => '1',
+    'display_type' => '0',
     'hide_select_all' => 0,
     'skip_confirmation' => 1,
     'display_result' => 1,
